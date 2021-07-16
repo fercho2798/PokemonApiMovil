@@ -51,7 +51,7 @@ const GenI = props => {
                     })
                   }>
                   <Image
-                    style={{width: 200, height: 200}}
+                    style={{width: 150, height: 150}}
                     source={{
                       uri: `https://img.pokemondb.net/sprites/sword-shield/normal/${
                         pokemon.name
