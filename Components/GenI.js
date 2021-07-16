@@ -51,7 +51,7 @@ const GenI = props => {
                     })
                   }>
                   <Image
-                    style={{width: 150, height: 150}}
+                    style={{width: 200, height: 200}}
                     source={{
                       uri: `https://img.pokemondb.net/sprites/sword-shield/normal/${
                         pokemon.name
@@ -73,11 +73,7 @@ export default GenI;
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    paddingTop: 30,
-    backgroundColor: '#fff',
+    paddingTop: 60,
   },
   card: {
     alignItems: 'center',
@@ -85,6 +81,8 @@ const styles = StyleSheet.create({
     borderBottomColor: 'black',
     marginHorizontal: 20,
     marginVertical: 10,
+    backgroundColor: '#00aae4',
+    borderRadius: 10,
   },
   searchCont: {
     position: 'absolute',
