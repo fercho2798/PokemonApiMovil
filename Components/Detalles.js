@@ -25,12 +25,14 @@ const Detalles = props => {
           }.png`,
         }}
       />
-      <Text style={styles.text}>Nombre: {detalles.name.toUpperCase()}</Text>
-      <Text style={styles.text}>Alto: {detalles.height / 10} m</Text>
-      <Text style={styles.text}>Peso: {detalles.weight / 10} kg</Text>
-      <Text style={styles.text}>
-        Abilidad: {detalles.abilities[0].ability.name}
-      </Text>
+      <View style={styles.container}>
+        <Text style={styles.text}>Nombre: {detalles.name.toUpperCase()}</Text>
+        <Text style={styles.text}>Alto: {detalles.height / 10} m</Text>
+        <Text style={styles.text}>Peso: {detalles.weight / 10} kg</Text>
+        <Text style={styles.text}>
+          Abilidad: {detalles.abilities[0].ability.name}
+        </Text>
+      </View>
       {detalles.types[1] ? (
         <Text style={styles.text}>
           {' '}
@@ -62,11 +64,25 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
+    paddingBottom: 20,
+    color: 'red',
+    textAlign: 'center',
+    fontSize: 20,
     paddingTop: 30,
   },
   indicator: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  container: {
+    flex: 1,
+    borderWidth: 1,
+    flexDirection: 'column',
+    width: 400,
+    borderRadius: 5,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    backgroundColor: 'black',
   },
 });
